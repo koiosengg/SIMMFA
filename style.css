@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  position: relative;
+  background: var(--Black-Primary, #000);
+}
+
+/* Application */
+
+.application {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 160px;
+}
+
+.application-details {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.application h1 {
+  color: #f8f8f8;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.application-details form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.form-input-seperator {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.input-container label {
+  color: #f7f7f7;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input-container input {
+  width: 100%;
+  display: flex;
+  padding: 13px 18px 16px 18px;
+  align-items: center;
+  align-self: stretch;
+  border: 1px solid #2e2e30;
+  background: #181818;
+  color: #8c94a3;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  transition: all 0.3s;
+}
+
+.input-container input:not(:placeholder-shown) {
+  color: #fff;
+}
+
+.input-with-icon {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-with-icon .input-icon {
+  position: absolute;
+  left: 12px;
+  pointer-events: none;
+}
+
+.input-with-icon input {
+  padding: 13px 18px 16px 48px;
+}
+
+.input-container select {
+  width: 100%;
+  display: flex;
+  padding: 13px 18px 16px 18px;
+  align-items: center;
+  border: 1px solid #2e2e30;
+  background-color: #181818;
+  color: #8c94a3;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'><path d='M13 6L8 11L3 6' stroke='%23A1A5B3' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 16px;
+  transition: all 0.3s;
+}
+
+.input-container select:valid {
+  color: #fff;
+}
+
+.application button {
+  width: 100%;
+  display: flex;
+  padding: 16px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  background: #f8f8f8;
+  color: #000;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.application button:hover {
+  background: #d8d8d8;
+}
+
+.application-payment {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.application-payment form {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.form-inputs {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.form-radio-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.form-radio-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  gap: 24px;
+  border: 1px solid #2e2e30;
+  background: #181818;
+}
+
+.form-radio-option svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.form-radio-option p {
+  color: #f8f8f8;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+  flex-shrink: 0;
+}
+
+.form-radio-option p:nth-of-type(1) {
+  width: 200px;
+}
+
+.form-radio-option p:nth-of-type(2) {
+  min-width: 124px;
+}
+
+.form-radio-button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-radio-option input[type="radio"] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.form-radio-option input[type="radio"]:checked {
+  background-color: #00c853;
+  border-color: #00c853;
+}
+
+.form-radio-option input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 7px;
+  transform: translate(-50%, -50%);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7' fill='none'%3E%3Cpath d='M9 0.75L3.49997 6L0.75 3.375' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat center;
+  background-size: contain;
+}
+
+.form-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.form-checkbox-container input {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #fff;
+  background-color: #000;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.form-checkbox-container input:checked {
+  background-color: #bf9c00;
+  border-color: #bf9c00;
+}
+
+.form-checkbox-container input:checked::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M11.8125 3.93774L5.6875 10.0625L2.625 7.00024' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.form-checkbox-container label {
+  color: #fffcfc;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form-summary {
+  width: 40%;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #2e2e30;
+  background: #181818;
+}
+
+.form-summary-course {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.form-summary-course h2 {
+  color: #f8f8f8;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.form-summary-course-details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-summary-course-details img {
+  width: 100px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.form-summary-course-details-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 12px;
+}
+
+.form-summary-course-details-text p {
+  color: #bf9c00;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.14px;
+}
+
+.form-summary-course-details-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.form-summary-course-details-heading p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.form-summary-course-details-heading p span {
+  color: #a1a5b3;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.form-summary-course-details-heading h3 {
+  color: #f8f8f8;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+}
+
+.form-summary hr {
+  width: 100%;
+  border: 1px solid rgba(63, 63, 63, 0.5);
+}
+
+.form-summary-price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.form-summary-price-set {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.form-summary-price-set p {
+  color: #fbfbfb;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+}
+
+.form-summary-price-set span {
+  color: #f8f8f8;
+  text-align: right;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form-summary-price-set h4 {
+  color: #f8f8f8;
+  text-align: right;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.24px;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .mobile {
+    display: flex;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  /* Application */
+
+  .application {
+    padding: 48px 20px;
+  }
+
+  .application h1 {
+    color: #f8f8f8;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .application button {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .application-payment form {
+    flex-direction: column-reverse;
+  }
+
+  .form-summary {
+    width: 100%;
+  }
+
+  .form-summary-course h2 {
+    color: #f8f8f8;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .form-summary-price-set h4 {
+    color: #f8f8f8;
+    text-align: right;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .form-inputs {
+    width: 100%;
+  }
+
+  .form-radio-option {
+    padding: 10px 8px;
+    flex-wrap: wrap;
+  }
+
+  .form-radio-option p {
+    display: none;
+  }
+
+  .form-radio-option p:nth-of-type(1) {
+    display: flex;
+    width: calc(100% - 124px);
+  }
+
+  .form-radio-button {
+    width: auto;
+    flex-grow: 1;
+  }
+}
