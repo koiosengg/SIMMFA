@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Course from "../../assets/Application/Course.png";
 
 function Payment() {
+  const navigate = useNavigate();
   return (
     <div className="application-payment">
       <h1>Payment Method</h1>
@@ -231,7 +233,12 @@ function Payment() {
               </div>
             </div>
           </div>
-          <button onClick={() => navigate("payment")}>Complete Payment</button>
+          <button
+            type="button"
+            onClick={() => navigate("/application/confirmation")}
+          >
+            Complete Payment
+          </button>
         </div>
       </form>
     </div>

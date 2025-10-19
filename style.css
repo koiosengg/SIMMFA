@@ -157,6 +157,7 @@ html {
   align-items: center;
   gap: 12px;
   align-self: stretch;
+  border: 1px solid #f8f8f8;
   background: #f8f8f8;
   color: #000;
   font-family: Inter;
@@ -165,13 +166,14 @@ html {
   font-weight: 700;
   line-height: normal;
   text-transform: capitalize;
-  border: none;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .application button:hover {
-  background: #d8d8d8;
+  background: #000;
+  color: #fff;
+  border: 1px solid #f8f8f8;
 }
 
 .application-payment {
@@ -474,6 +476,72 @@ html {
   font-weight: 600;
   line-height: 32px;
   letter-spacing: -0.24px;
+}
+
+.application-confirmation {
+  width: 100%;
+  display: flex;
+  padding: 80px 160px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+}
+
+.application-confirmation p {
+  color: var(--Font-font, #f8f8f8);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.application-confirmation svg {
+  width: 240px;
+  height: 240px;
+  aspect-ratio: 1/1;
+}
+
+.application-confirmation h1 {
+  color: var(--Font-font, #f8f8f8);
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.application .application-confirmation button {
+  width: auto;
+  align-self: auto;
+  border-radius: 8px;
+  border: 1px solid #f8f8f8;
+}
+
+.application-confirmation-buttons {
+  display: flex;
+  width: 214px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.application-confirmation .application-confirmation-buttons button {
+  width: 100%;
+}
+
+.application .contact-us {
+  border-radius: 8px;
+  border: 1px solid var(--Font-font, #f8f8f8);
+  background: none;
+  color: var(--Font-font, #f8f8f8);
+}
+
+.application .contact-us:hover {
+  background: #fff;
+  color: #000;
 }
 
 .mobile {

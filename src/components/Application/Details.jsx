@@ -50,7 +50,7 @@ function Details() {
             </select>
           </div>
         </div>
-        <button type="button" onClick={() => navigate("payment")}>
+        <button type="button" onClick={() => navigate("/application/payment")}>
           Proceed to payment
         </button>
       </form>
