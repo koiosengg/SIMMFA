@@ -211,51 +211,20 @@ html {
 .form-radio-option {
   width: 100%;
   display: flex;
-  align-items: center;
-  padding: 10px 24px;
+  padding: 12px 24px;
   gap: 24px;
   border: 1px solid #2e2e30;
   background: #181818;
-}
-
-.form-radio-option svg {
-  width: 32px;
-  height: 32px;
-  flex-shrink: 0;
-}
-
-.form-radio-option p {
-  color: #f8f8f8;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.14px;
-  flex-shrink: 0;
-}
-
-.form-radio-option p:nth-of-type(1) {
-  width: 200px;
-}
-
-.form-radio-option p:nth-of-type(2) {
-  min-width: 124px;
-}
-
-.form-radio-button {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .form-radio-option input[type="radio"] {
   appearance: none;
   width: 24px;
   height: 24px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   background-color: #000;
   border-radius: 50%;
+  flex-shrink: 0;
   cursor: pointer;
   position: relative;
 }
@@ -278,50 +247,137 @@ html {
   background-size: contain;
 }
 
-.form-checkbox-container {
+.form-radio-option-container {
+  width: 100%;
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
 }
 
-.form-checkbox-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
+.form-radio-option h2 {
+  color: #f8f8f8;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  flex-shrink: 0;
 }
 
-.form-checkbox-container input {
-  appearance: none;
-  width: 22px;
-  height: 22px;
-  border: 1px solid #fff;
-  background-color: #000;
-  border-radius: 4px;
+.form-upi-container {
+  width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.form-radio-option p {
+  color: #f8f8f8;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.form-upi-options {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.form-upi-options img {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  padding: 4px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 40px;
+  border: 1px solid var(--Foundation-Whites-white-300, #f6f6f6);
+  background: #fff;
+  transition: all 0.3s;
   cursor: pointer;
-  position: relative;
 }
 
-.form-checkbox-container input:checked {
-  background-color: #bf9c00;
-  border-color: #bf9c00;
+.form-upi-options img:hover {
+  background: #d6d6d6;
 }
 
-.form-checkbox-container input:checked::after {
-  content: "";
-  width: 14px;
-  height: 14px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M11.8125 3.93774L5.6875 10.0625L2.625 7.00024' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
+.form-upi-input {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
 }
 
-.form-checkbox-container label {
-  color: #fffcfc;
+.form-upi-input input {
+  display: flex;
+  width: 100%;
+  max-width: 362px;
+  padding: 13px 18px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #2e2e30;
+  background: #333232;
+  color: #8c94a3;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+}
+
+.form-upi-input input:not(:placeholder-shown) {
+  color: #fff;
+}
+
+.form-upi-input button {
+  width: auto;
+  display: flex;
+  height: 50px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 8px;
+  background: #f8f8f8;
+  color: #111;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.form-upi-line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.form-upi-line hr {
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.form-upi-line span {
+  color: #f8f8f8;
+  text-align: center;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -618,8 +674,7 @@ html {
   }
 
   .form-radio-option {
-    padding: 10px 8px;
-    flex-wrap: wrap;
+    padding: 12px;
   }
 
   .form-radio-option p {
