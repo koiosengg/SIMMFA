@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 import Application from "./components/Application";
 import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import Challenges from "./components/Challenges";
+import Blogs from "./components/Blogs";
 
 function App() {
   return (
@@ -15,11 +17,13 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
+          <Route path="blogs/*" element={<Blogs />} />
           <Route path="application/*" element={<Application />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Home />} />
         </Route>
       </Routes>
+      <Challenges />
       <Footer />
     </BrowserRouter>
   );
