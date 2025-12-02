@@ -632,7 +632,7 @@ header {
 }
 
 .blog-read-more button:hover {
-  color: #cc3102;
+  background: #cc3102;
   border: 1px solid #cc3102;
 }
 
