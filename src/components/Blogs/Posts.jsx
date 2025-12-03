@@ -6,6 +6,8 @@ import Blog3 from "../../assets/Blogs/Posts/Blog3.png";
 import Blog4 from "../../assets/Blogs/Posts/Blog4.jpg";
 import Blog5 from "../../assets/Blogs/Posts/Blog5.jpg";
 import Blog6 from "../../assets/Blogs/Posts/Blog6.png";
+import Blog7 from "../../assets/Blogs/Posts/Blog7.png";
+import Blog8 from "../../assets/Blogs/Posts/Blog8.png";
 
 function Posts() {
   const sliderRef = useRef(null);
@@ -63,6 +65,22 @@ function Posts() {
       likes: 3,
       shares: 2,
       link: "/blogs/blog6",
+    },
+    {
+      img: Blog7,
+      title: "Hands-On Music Training at Soundkraft Real Gear, Real Learning",
+      category: "Music",
+      likes: 3,
+      shares: 2,
+      link: "/blogs/blog7",
+    },
+    {
+      img: Blog8,
+      title: "Is a Diploma in Sound Engineering Worth It in 2025?",
+      category: "Music",
+      likes: 3,
+      shares: 2,
+      link: "/blogs/blog8",
     },
   ];
 
