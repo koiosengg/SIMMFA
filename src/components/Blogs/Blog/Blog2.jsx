@@ -103,12 +103,21 @@ function Blog2() {
             <div className="blog-text">
               <h2>Wrapping Up </h2>
               <p>
-                At SoundKraft, we’ve seen these mistakes play out over and over
-                again. And we’ve also seen people bounce back from them
-                stronger. Mistakes aren’t the problem , staying stuck in them
-                is. The gear, the skills, the plugins , all that comes with
-                time. But your mindset? That’s something you can fix today.
-                Visit SoundKraft to learn more.
+                At{" "}
+                <a href="https://www.soundkraft.in/" target="_blank">
+                  SoundKraft
+                </a>{" "}
+                , we’ve seen these mistakes play out over and over again. And
+                we’ve also seen people bounce back from them stronger. Mistakes
+                aren’t the problem , staying stuck in them is.
+              </p>
+              <p>
+                The gear, the skills, the plugins , all that comes with time.
+                But your mindset? That’s something you can fix today. Visit{" "}
+                <a href="https://www.soundkraft.in/" target="_blank">
+                  SoundKraft
+                </a>{" "}
+                to learn more.
               </p>
             </div>
             <div className="blog-read-more">

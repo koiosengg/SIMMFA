@@ -53,7 +53,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 32px 180px;
+  padding: 32px 180px 0px 180px;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -490,6 +490,15 @@ header {
   line-height: normal;
 }
 
+.blog-container h2 span {
+  color: var(--Font-font, #f8f8f8);
+  font-family: "Space Grotesk";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .blog-container p {
   color: var(--Font-font-700, #b0b0b0);
   font-family: "Space Grotesk";
@@ -497,6 +506,26 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.blog-container p a {
+  color: var(--Font-font-700, #b0b0b0);
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  transition: all 0.3s;
+}
+
+.blog-container p a:hover {
+  color: #cc3102;
 }
 
 .blog-container p u {
@@ -527,6 +556,25 @@ header {
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+}
+
+.blog-container p span a {
+  color: var(--Font-font, #f8f8f8);
+  font-family: "Space Grotesk";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.blog-container p span a:hover {
+  color: #cc3102;
 }
 
 .blog-container h3 {

@@ -34,15 +34,24 @@ function Blog1() {
               tension? Gone. That emotion? Faded. Now do the reverse , keep the
               music, lose the visuals , and you’ll still feel something. That’s
               how much audio matters.
-              <br /> This is exactly what we explore at <u>SoundKraft</u> , the
-              fusion of sight and sound that turns ordinary into unforgettable.
+              <br /> This is exactly what we explore at{" "}
+              <a href="https://www.soundkraft.in/" target="_blank">
+                SoundKraft
+              </a>{" "}
+              , the fusion of sight and sound that turns ordinary into
+              unforgettable.
             </p>
           </div>
           <div className={`blog-content ${readMore ? "read-more" : ""}`}>
             <div className="blog-text">
               <h2>Why You Should Care About Both</h2>
               <p>
-                When done right, <span>photography and sound design</span>{" "}
+                When done right,{" "}
+                <span>
+                  <a href="https://www.soundkraft.in/courses" target="_blank">
+                    photography and sound design
+                  </a>
+                </span>{" "}
                  together tell stories in a way no single medium can. Whether
                 you’re creating Instagram reels, shooting a short film, or
                 making a music video, one enhances the other. Always. That’s the
@@ -53,7 +62,11 @@ function Blog1() {
               <p>
                 We don’t believe in cookie-cutter education. Whether you want a
                 full-time career in media or are simply exploring creative
-                hobbies, <u>SoundKraft</u> has you covered.
+                hobbies,{" "}
+                <a href="https://www.soundkraft.in/" target="_blank">
+                  SoundKraft
+                </a>{" "}
+                has you covered.
               </p>
               <h3>
                 Academic Programs{" "}
@@ -162,12 +175,26 @@ function Blog1() {
               <p>
                 Choosing a path isn’t easy. But if you’ve ever felt the urge to
                 create, to build something that moves people, then the combo of{" "}
-                <span>photography and sound design</span> is a great place to
-                start. Our multimedia production course isn’t just about
-                learning tools And if a creative media career is what you’re
-                aiming for, there’s no better launchpad than <u>SoundKraft</u>.
-                <br /> Visit <span>www.soundkraft.in</span> to explore courses
-                or call our counselors to find your fit.
+                <span>
+                  <a href="https://www.soundkraft.in/courses" target="_blank">
+                    photography and sound design
+                  </a>
+                </span>{" "}
+                 is a great place to start. Our multimedia production
+                course isn’t just about learning tools And if a creative media
+                career is what you’re aiming for, there’s no better launchpad
+                than{" "}
+                <a href="https://www.soundkraft.in/" target="_blank">
+                  SoundKraft
+                </a>{" "}
+                .
+                <br /> Visit{" "}
+                <span>
+                  <a href="https://www.soundkraft.in/" target="_blank">
+                    www.soundkraft.in
+                  </a>
+                </span>{" "}
+                 to explore courses or call our counselors to find your fit.
               </p>
             </div>
             <div className="blog-read-more">
