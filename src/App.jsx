@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 import Challenges from "./components/Challenges";
 import Blogs from "./components/Blogs";
+import Courses from "./components/Courses";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/">
-          <Route index element={<Home />} />
+          <Route index element={<Home />} />{" "}
+          <Route path="courses/*" element={<Courses />} />
           <Route path="blogs/*" element={<Blogs />} />
           <Route path="application/*" element={<Application />} />
           <Route path="contact" element={<Contact />} />
