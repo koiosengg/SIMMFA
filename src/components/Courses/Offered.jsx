@@ -33,65 +33,65 @@ function Offered() {
                   <path
                     d="M12 11.25L12 20.25"
                     stroke="#B0B0B0"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M12 3.75L12 8.25"
                     stroke="#B0B0B0"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M18.75 18.75L18.7501 20.25"
                     stroke="#B0B0B0"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M18.7501 3.75L18.75 15.75"
                     stroke="#B0B0B0"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M21 15.75H16.5"
                     stroke="#B0B0B0"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M5.25007 15.75L5.25 20.25"
                     stroke="#B0B0B0"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M5.25 3.75L5.25007 12.75"
                     stroke="#B0B0B0"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M3 12.75H7.5"
                     stroke="#B0B0B0"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M14.25 8.25H9.75"
                     stroke="#B0B0B0"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
                 <p>Filter</p>
@@ -109,16 +109,16 @@ function Offered() {
                 <path
                   d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
                   stroke="#B0B0B0"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M16.4434 16.4438L20.9997 21.0002"
                   stroke="#B0B0B0"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
               <input placeholder="Diploma in Music" />

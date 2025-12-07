@@ -4,6 +4,8 @@ import Banner from "./Courses/Banner";
 import Offered from "./Courses/Offered";
 import Music from "./Courses/Music";
 import FAQ from "./FAQ";
+import Testimony from "./Testimony";
+import HobbySubscriptions from "./Courses/Course/HobbySubscriptions";
 
 function Courses() {
   return (
@@ -16,10 +18,11 @@ function Courses() {
             <Offered />
             <Music />
             <FAQ />
+            <Testimony />
           </>
         }
       />
-      {/* <Route path="blog1" element={<Blog1 />} /> */}
+      <Route path="Hobby-Subscriptions" element={<HobbySubscriptions />} />
     </Routes>
   );
 }
