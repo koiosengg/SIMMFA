@@ -8,6 +8,45 @@ import Star from "../../assets/Courses/Offered/Star.svg";
 import Profile from "../../assets/Courses/Offered/Profile.svg";
 
 function Offered() {
+  const coursesOffered = [
+    {
+      img: Course1,
+      title: "Academic Programs",
+      category: "DSMT",
+      price: "₹5,00,000",
+      rating: "5.0",
+      students: "10K",
+      link: "/",
+    },
+    {
+      img: Course2,
+      title: "Certificate Courses",
+      category: "DSMT",
+      price: "₹60,000",
+      rating: "5.0",
+      students: "10K",
+      link: "/",
+    },
+    {
+      img: Course3,
+      title: "GRMP",
+      category: "DSMT",
+      price: "₹1,25,000",
+      rating: "5.0",
+      students: "10K",
+      link: "/",
+    },
+    {
+      img: Course4,
+      title: "Hobby Subscriptions",
+      category: "DSMT",
+      price: "₹5,500",
+      rating: "5.0",
+      students: "10K",
+      link: "/Hobby-Subscriptions",
+    },
+  ];
+
   return (
     <section className="courses-offered">
       <div className="courses-offered-heading">
@@ -149,102 +188,32 @@ function Offered() {
         </div>
       </div>
       <div className="courses-offered-container">
-        <Link to="/" className="courses-offered-set">
-          <div className="courses-offered-set-img">
-            <img src={Course1} alt="Academic Programs" />
-          </div>
-          <div className="courses-offered-set-content">
-            <div className="courses-offered-set-price-and-cateogry">
-              <span>DSMT</span>
-              <p>₹5,00,000</p>
+        {coursesOffered.map((course, index) => (
+          <Link to={course.link} className="courses-offered-set" key={index}>
+            <div className="courses-offered-set-img">
+              <img src={course.img} alt={course.title} />
             </div>
-            <h3>Academic Programs</h3>
-            <div className="courses-offered-set-bottom">
-              <div className="courses-offered-set-bottom-set">
-                <img src={Star} alt="Star Icon" />
-                <p>5.0</p>
+            <div className="courses-offered-set-content">
+              <div className="courses-offered-set-price-and-cateogry">
+                <span>{course.category}</span>
+                <p>{course.price}</p>
               </div>
-              <div className="courses-offered-set-bottom-set">
-                <img src={Profile} alt="Profile Icon" />
-                <p>
-                  <span>10K</span> students
-                </p>
-              </div>
-            </div>
-          </div>
-        </Link>
-        <Link to="/" className="courses-offered-set">
-          <div className="courses-offered-set-img">
-            <img src={Course2} alt="Academic Programs" />
-          </div>
-          <div className="courses-offered-set-content">
-            <div className="courses-offered-set-price-and-cateogry">
-              <span>DSMT</span>
-              <p>₹60,000</p>
-            </div>
-            <h3>Certificate Courses</h3>
-            <div className="courses-offered-set-bottom">
-              <div className="courses-offered-set-bottom-set">
-                <img src={Star} alt="Star Icon" />
-                <p>5.0</p>
-              </div>
-              <div className="courses-offered-set-bottom-set">
-                <img src={Profile} alt="Profile Icon" />
-                <p>
-                  <span>10K</span> students
-                </p>
+              <h3>{course.title}</h3>
+              <div className="courses-offered-set-bottom">
+                <div className="courses-offered-set-bottom-set">
+                  <img src={Star} alt="Star Icon" />
+                  <p>{course.rating}</p>
+                </div>
+                <div className="courses-offered-set-bottom-set">
+                  <img src={Profile} alt="Profile Icon" />
+                  <p>
+                    <span>{course.students}</span> students
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </Link>
-        <Link to="/" className="courses-offered-set">
-          <div className="courses-offered-set-img">
-            <img src={Course3} alt="GRMP" />
-          </div>
-          <div className="courses-offered-set-content">
-            <div className="courses-offered-set-price-and-cateogry">
-              <span>DSMT</span>
-              <p>₹1,25,000</p>
-            </div>
-            <h3>GRMP</h3>
-            <div className="courses-offered-set-bottom">
-              <div className="courses-offered-set-bottom-set">
-                <img src={Star} alt="Star Icon" />
-                <p>5.0</p>
-              </div>
-              <div className="courses-offered-set-bottom-set">
-                <img src={Profile} alt="Profile Icon" />
-                <p>
-                  <span>10K</span> students
-                </p>
-              </div>
-            </div>
-          </div>
-        </Link>
-        <Link to="Hobby-Subscriptions" className="courses-offered-set">
-          <div className="courses-offered-set-img">
-            <img src={Course4} alt="Hobby Subscriptions" />
-          </div>
-          <div className="courses-offered-set-content">
-            <div className="courses-offered-set-price-and-cateogry">
-              <span>DSMT</span>
-              <p>₹5,500</p>
-            </div>
-            <h3>Hobby Subscriptions</h3>
-            <div className="courses-offered-set-bottom">
-              <div className="courses-offered-set-bottom-set">
-                <img src={Star} alt="Star Icon" />
-                <p>5.0</p>
-              </div>
-              <div className="courses-offered-set-bottom-set">
-                <img src={Profile} alt="Profile Icon" />
-                <p>
-                  <span>10K</span> students
-                </p>
-              </div>
-            </div>
-          </div>
-        </Link>
+          </Link>
+        ))}
       </div>
     </section>
   );

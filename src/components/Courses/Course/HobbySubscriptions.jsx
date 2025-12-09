@@ -21,6 +21,8 @@ import Ukelele from "../../../assets/Courses/Course/Ukelele.svg";
 import Harmonium from "../../../assets/Courses/Course/Harmonium.svg";
 import Feedback from "../../../assets/Courses/Course/Image.svg";
 import RedStar from "../../../assets/Courses/Course/Red Star.svg";
+import HalfRedStar from "../../../assets/Courses/Course/Half Red Star.svg";
+import HollowRedStar from "../../../assets/Courses/Course/Hollow Red Star.svg";
 import CourseLevel from "../../../assets/Courses/Course/Course Level.svg";
 import Language from "../../../assets/Courses/Course/Language.svg";
 import Mode from "../../../assets/Courses/Course/Mode.svg";
@@ -30,6 +32,8 @@ import Copy from "../../../assets/Courses/Course/Copy.svg";
 import Facebook from "../../../assets/Courses/Course/Facebook.svg";
 import Envelope from "../../../assets/Courses/Course/Envelope.svg";
 import Whatsapp from "../../../assets/Courses/Course/Whatsapp.svg";
+import Video from "../Video";
+import Related from "../Related";
 
 function HobbySubscriptions() {
   const [activeCategory, setActiveCategory] = useState("category1");
@@ -787,6 +791,118 @@ function HobbySubscriptions() {
           </div>
         </div>
       </section>
+      <section className="course-rating">
+        <h2>Course Rating</h2>
+        <div className="course-rating-container">
+          <div className="course-rating-container-left">
+            <h3>4.8</h3>
+            <div className="course-rating-container-left-content">
+              <div className="course-rating-container-left-stars">
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={HalfRedStar} alt="Half Red Star Icon" />
+              </div>
+              <p>Course Rating</p>
+            </div>
+          </div>
+          <div className="course-rating-container-right">
+            <div className="course-rating-container-right-set">
+              <div className="course-rating-container-left-stars">
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+              </div>
+              <div className="course-rating-container-right-progress">
+                <div className="course-rating-container-right-progress-bar">
+                  <div
+                    className="course-rating-container-right-progress-line"
+                    style={{ width: "75%" }}
+                  ></div>
+                </div>
+                <p>75%</p>
+              </div>
+            </div>
+            <div className="course-rating-container-right-set">
+              <div className="course-rating-container-left-stars">
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={HollowRedStar} alt="Hollow Red Star Icon" />
+              </div>
+              <div className="course-rating-container-right-progress">
+                <div className="course-rating-container-right-progress-bar">
+                  <div
+                    className="course-rating-container-right-progress-line"
+                    style={{ width: "21%" }}
+                  ></div>
+                </div>
+                <p>21%</p>
+              </div>
+            </div>
+            <div className="course-rating-container-right-set">
+              <div className="course-rating-container-left-stars">
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={HollowRedStar} alt="Hollow Red Star Icon" />
+                <img src={HollowRedStar} alt="Hollow Red Star Icon" />
+              </div>
+              <div className="course-rating-container-right-progress">
+                <div className="course-rating-container-right-progress-bar">
+                  <div
+                    className="course-rating-container-right-progress-line"
+                    style={{ width: "3%" }}
+                  ></div>
+                </div>
+                <p>3%</p>
+              </div>
+            </div>
+            <div className="course-rating-container-right-set">
+              <div className="course-rating-container-left-stars">
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={HollowRedStar} alt="Hollow Red Star Icon" />
+                <img src={HollowRedStar} alt="Hollow Red Star Icon" />
+                <img src={HollowRedStar} alt="Hollow Red Star Icon" />
+              </div>
+              <div className="course-rating-container-right-progress">
+                <div className="course-rating-container-right-progress-bar">
+                  <div
+                    className="course-rating-container-right-progress-line"
+                    style={{ width: "1%" }}
+                  ></div>
+                </div>
+                <p>1%</p>
+              </div>
+            </div>
+            <div className="course-rating-container-right-set">
+              <div className="course-rating-container-left-stars">
+                <img src={RedStar} alt="Red Star Icon" />
+                <img src={HollowRedStar} alt="Hollow Red Star Icon" />
+                <img src={HollowRedStar} alt="Hollow Red Star Icon" />
+                <img src={HollowRedStar} alt="Hollow Red Star Icon" />
+                <img src={HollowRedStar} alt="Hollow Red Star Icon" />
+              </div>
+              <div className="course-rating-container-right-progress">
+                <div className="course-rating-container-right-progress-bar">
+                  <div
+                    className="course-rating-container-right-progress-line"
+                    style={{ width: "0.5%" }}
+                  ></div>
+                </div>
+                <p>&lt;1%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Video />
+      <Related />
     </>
   );
 }
