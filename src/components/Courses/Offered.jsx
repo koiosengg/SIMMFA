@@ -221,7 +221,7 @@ function Offered() {
             </div>
           </div>
         </Link>
-        <Link to="/" className="courses-offered-set">
+        <Link to="Hobby-Subscriptions" className="courses-offered-set">
           <div className="courses-offered-set-img">
             <img src={Course4} alt="Hobby Subscriptions" />
           </div>
