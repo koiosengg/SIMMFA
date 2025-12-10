@@ -11,7 +11,7 @@ function Video() {
           unforgettable performances.
         </p>
       </div>
-      <video src={Sample} autoPlay muted />
+      <video src={Sample} autoPlay controls />
     </section>
   );
 }

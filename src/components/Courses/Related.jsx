@@ -4,6 +4,7 @@ import Course1 from "../../assets/Courses/Offered/Course1.png";
 import Course2 from "../../assets/Courses/Offered/Course2.png";
 import Course3 from "../../assets/Courses/Offered/Course3.png";
 import Course4 from "../../assets/Courses/Offered/Course4.png";
+import Course5 from "../../assets/Courses/Offered/Course5.jpg";
 import Star from "../../assets/Courses/Offered/Star.svg";
 import Profile from "../../assets/Courses/Offered/Profile.svg";
 
@@ -22,7 +23,7 @@ function Related() {
       price: "₹5,00,000",
       rating: "5.0",
       students: "10K",
-      link: "/",
+      link: "/courses/Academic-Programs",
     },
     {
       img: Course2,
@@ -40,7 +41,7 @@ function Related() {
       price: "₹1,25,000",
       rating: "5.0",
       students: "10K",
-      link: "/",
+      link: "/courses/Guaranteed-Result-Music-Program",
     },
     {
       img: Course4,
@@ -49,7 +50,16 @@ function Related() {
       price: "₹5,500",
       rating: "5.0",
       students: "10K",
-      link: "/Hobby-Subscriptions",
+      link: "/courses/Hobby-Subscriptions",
+    },
+    {
+      img: Course5,
+      title: "Advance Music Certification",
+      category: "DSMT",
+      price: "₹5,500",
+      rating: "5.0",
+      students: "10K",
+      link: "/courses/Advance-Music-Certification",
     },
   ];
 

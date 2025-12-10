@@ -6,6 +6,9 @@ import Music from "./Courses/Music";
 import FAQ from "./FAQ";
 import Testimony from "./Testimony";
 import HobbySubscriptions from "./Courses/Course/HobbySubscriptions";
+import AdvanceMusicCertification from "./Courses/Course/AdvanceMusicCertification";
+import AcademicPrograms from "./Courses/Course/AcademicPrograms";
+import GRMP from "./Courses/Course/GRMP";
 
 function Courses() {
   return (
@@ -23,6 +26,12 @@ function Courses() {
         }
       />
       <Route path="Hobby-Subscriptions" element={<HobbySubscriptions />} />
+      <Route path="Academic-Programs" element={<AcademicPrograms />} />
+      <Route
+        path="Advance-Music-Certification"
+        element={<AdvanceMusicCertification />}
+      />
+      <Route path="Guaranteed-Result-Music-Program" element={<GRMP />} />
     </Routes>
   );
 }
