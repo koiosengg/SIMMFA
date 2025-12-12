@@ -32,7 +32,7 @@ function Related() {
       price: "₹60,000",
       rating: "5.0",
       students: "10K",
-      link: "/",
+      link: "/courses/Certification-Courses",
     },
     {
       img: Course3,

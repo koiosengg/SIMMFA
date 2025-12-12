@@ -563,6 +563,7 @@ header {
 }
 
 .courses-offered-heading p {
+  max-width: 546px;
   color: var(--Font-font-600, #e2e2e2);
   font-family: "Space Grotesk";
   font-size: 20px;
@@ -1585,7 +1586,7 @@ header {
 }
 
 .course-container-right {
-  width: 100%;
+  width: 40%;
   display: flex;
   padding: 24px;
   flex-direction: column;
@@ -1595,6 +1596,7 @@ header {
   border-radius: 8px;
   background: #171717;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
 }
 
 .course-container-right-price {
@@ -1975,6 +1977,55 @@ header {
   font-family: "Space Grotesk";
 }
 
+.blogs-trending {
+  width: 100%;
+  display: flex;
+  padding: 80px 160px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  align-self: stretch;
+}
+
+.blogs-trending-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.blogs-trending-heading h2 {
+  color: var(--Font-font, #f8f8f8);
+  font-family: Manuale;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.blogs-trending-heading p {
+  max-width: 546px;
+  color: var(--Font-font-600, #e2e2e2);
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.blogs-trending-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.blogs-trending-container .blogs-posts-card {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
 .blogs-posts {
   width: 100%;
   display: flex;
@@ -2076,6 +2127,7 @@ header {
   align-self: stretch;
   overflow: hidden;
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 .blogs-posts-card:hover {

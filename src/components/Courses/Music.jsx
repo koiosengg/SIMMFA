@@ -13,7 +13,7 @@ function Music() {
           </h2>
           <p>Because music sounds better when we play it together</p>
         </div>
-        <Link  className="primary-button">
+        <Link to="/" className="primary-button">
           Come Join us
         </Link>
       </div>
