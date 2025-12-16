@@ -9,6 +9,8 @@ import Testimony from "./Testimony";
 import Challenges from "./Challenges";
 import Footer from "./Footer";
 import Partners from "./Home/Partners";
+import Journey from "./Home/Journey";
+import Empire from "./Home/Empire";
 function Home() {
   return (
     <>
@@ -16,8 +18,10 @@ function Home() {
       <Courses />
       <Affiliations />
       <Deadline />
+      <Empire />     
       <Music />
       <Posts />
+      <Journey />
       <Partners />
       <Testimony />
     </>

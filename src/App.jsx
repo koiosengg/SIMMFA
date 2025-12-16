@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Challenges from "./components/Challenges";
 import Blogs from "./components/Blogs";
 import Courses from "./components/Courses";
+import About from "./components/About";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/">
           <Route index element={<Home />} />{" "}
           <Route path="courses/*" element={<Courses />} />
+          <Route path="about" element={<About />} />
           <Route path="blogs/*" element={<Blogs />} />
           <Route path="application/*" element={<Application />} />
           <Route path="contact" element={<Contact />} />
