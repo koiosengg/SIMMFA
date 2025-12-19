@@ -2644,7 +2644,7 @@ header {
 }
 
 .about-awards-set.active-about-awards-set .about-awards-set-text p {
-  height: auto; 
+  height: auto;
   opacity: 1;
 }
 
@@ -2682,6 +2682,98 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.about-story {
+  display: flex;
+  padding: 80px 80px 80px 160px;
+  align-items: center;
+  gap: 40px;
+  align-self: stretch;
+}
+
+.about-story-content {
+  width: 60%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.about-story-content-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.about-story-content-heading h2 {
+  color: var(--Font-font, #f8f8f8);
+  font-family: Manuale;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.about-story-content-heading p {
+  color: var(--Font-font-700, #b0b0b0);
+  font-family: "Space Grotesk";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-story-content-text {
+  width: 100%;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 24px;
+  background: linear-gradient(rgb(18, 18, 18), rgb(18, 18, 18)) padding-box
+      padding-box,
+    linear-gradient(
+        270deg,
+        rgb(18, 18, 18) 50%,
+        rgb(185, 185, 185) 100%,
+        rgb(18, 18, 18) 20%
+      )
+      border-box border-box;
+  border: 1px solid transparent;
+  box-shadow: -4px 8px 56px 0 rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.about-story-content-text svg {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.about-story-content-text p {
+  color: var(--Font-font-600, #e2e2e2);
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.about-story-img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-story-img img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Blogs */
