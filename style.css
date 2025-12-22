@@ -4361,6 +4361,223 @@ footer .logo {
     display: none;
   }
 
+  header {
+    height: 56px;
+    padding: 10px 20px;
+    background: rgba(18, 18, 18, 0.5);
+    backdrop-filter: blur(10px);
+  }
+
+  .navbar {
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    backdrop-filter: none;
+  }
+
+  .navbar-left a.desktop {
+    display: none;
+  }
+
+  .navbar .primary-button {
+    display: none;
+  }
+
+  .navbar .mobileNavbar .primary-button {
+    width: 100%;
+    display: flex;
+  }
+
+  .navbar-left img {
+    height: 32px;
+  }
+
+  .mobile-navbar-button {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .mobile-navbar-button img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .mobileNavbar {
+    width: 100%;
+    height: calc(100svh - 56px);
+    background: rgba(18, 18, 18, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 55px;
+    right: 0;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 40px 20px 20px 20px;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  .activeMobileNavbar {
+    transform: translateX(0);
+    animation: slideIn 0.3s forwards;
+  }
+
+  .nonactiveMobileNavbar {
+    transform: translateX(100%);
+    animation: slideOut 0.3s forwards;
+  }
+
+  .mobileNavbar nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .mobile-nav-links a {
+    color: var(--Font-font, #f8f8f8);
+    font-family: "Space Grotesk";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  /* Home */
+
+  .home-banner-music-end {
+    display: none;
+  }
+
+  .home-banner-guitar {
+    height: auto;
+  }
+
+  .home-banner-container h1 {
+    color: var(--Font-font, #f8f8f8);
+    text-align: center;
+    font-family: Manuale;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .home-courses {
+    padding: 48px 0px;
+    gap: 48px;
+  }
+
+  .home-courses-heading {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+  }
+
+  .home-courses-heading h2 {
+    color: var(--Font-font, #f8f8f8);
+    font-family: Manuale;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .home-courses-heading p {
+    color: var(--Font-font-600, #e2e2e2);
+    font-family: "Space Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .home-courses-container {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+  }
+
+  .home-courses-sets {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .home-trailer-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .courses-offered-set {
+    width: 80%;
+    flex-shrink: 0;
+  }
+
+  .home-courses-container a:last-child {
+    width: 100%;
+  }
+
+  .home-affiliations {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+  }
+
   /* Application */
 
   .application {

@@ -8,24 +8,31 @@ function Banner() {
   const endRef = useRef(null);
   const [lineCount, setLineCount] = useState(0);
 
-  useEffect(() => {
-    const calculateLines = () => {
-      if (!bannerRef.current || !endRef.current) return;
+useEffect(() => {
+  const calculateLines = () => {
+    if (!bannerRef.current || !endRef.current) return;
 
-      const bannerWidth = bannerRef.current.offsetWidth;
-      const endWidth = endRef.current.offsetWidth;
+    const bannerWidth = bannerRef.current.offsetWidth;
+    const endWidth = endRef.current.offsetWidth;
 
-      const usableWidth = bannerWidth - 2 * endWidth;
-      const count = Math.floor(usableWidth / 30);
+    const usableWidth = bannerWidth - 2 * endWidth;
+    let count = Math.floor(usableWidth / 30);
 
-      setLineCount(count);
-    };
+    if (window.innerWidth >= 1200) {
+      count = 30;
+    } else {
+      count = 15;
+    }
 
-    calculateLines();
-    window.addEventListener("resize", calculateLines);
+    setLineCount(count);
+  };
 
-    return () => window.removeEventListener("resize", calculateLines);
-  }, []);
+  calculateLines();
+  window.addEventListener("resize", calculateLines);
+
+  return () => window.removeEventListener("resize", calculateLines);
+}, []);
+
 
   return (
     <section className="home-banner" ref={bannerRef}>
