@@ -4413,8 +4413,8 @@ footer .logo {
   .mobileNavbar {
     width: 100%;
     height: calc(100svh - 56px);
-    background: rgba(18, 18, 18, 0.5);
-    backdrop-filter: blur(10px);
+    background: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(0px);
     position: fixed;
     top: 55px;
     right: 0;
@@ -4565,6 +4565,10 @@ footer .logo {
     flex-shrink: 0;
   }
 
+  .home-courses-container .home-courses-sets a:last-child {
+    width: 80%;
+  }
+
   .home-courses-container a:last-child {
     width: 100%;
   }
@@ -4576,6 +4580,313 @@ footer .logo {
     align-items: flex-start;
     gap: 48px;
     align-self: stretch;
+  }
+
+  .home-deadline {
+    min-height: 330px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .home-deadline-heading {
+    width: 100%;
+  }
+
+  .home-deadline-heading h2,
+  .home-deadline-heading h2 span {
+    font-family: Manuale;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .home-deadline-heading p {
+    color: var(--Font-font-900, #686868);
+    font-family: "Space Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .home-deadline .primary-button {
+    width: 100%;
+  }
+
+  .home-empire {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .home-empire-set {
+    gap: 8px;
+    padding: 0px 20px;
+  }
+
+  .home-empire-set-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .home-empire-set-text {
+    gap: 4px;
+  }
+
+  .home-empire-set-text h3 {
+    font-size: 10px;
+  }
+
+  .home-empire-set-text p {
+    font-size: 8px;
+  }
+
+  .home-journey {
+    display: flex;
+    padding: 48px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .home-journey-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .home-journey-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home-journey-set {
+    width: 80%;
+    flex-shrink: 0;
+  }
+
+  .home-journey-set:first-child img,
+  .home-journey-set:last-child img {
+    transform: none;
+  }
+
+  .home-journey-set:nth-child(2) img:hover {
+    scale: 1;
+  }
+
+  .home-journey-set p {
+    height: auto;
+    font-size: 20px;
+  }
+
+  .home-partners {
+    padding: 48px 20px;
+  }
+
+  .home-partners .home-affiliations-logo {
+    padding: 0;
+  }
+
+  .challenges {
+    height: auto;
+    min-height: 370px;
+  }
+
+  .challenges-container h2 {
+    color: var(--Font-font, #f8f8f8);
+    font-family: Manuale;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  .challenges-container h2 img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .challenges-container a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .challenges-container a svg {
+    width: 16px;
+    height: 16px;
+    aspect-ratio: 1/1;
+  }
+
+  footer {
+    padding: 0px 20px;
+  }
+
+  .footer-container {
+    padding: 24px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+  }
+
+  .footer {
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer nav{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-right {
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2;
+    padding-top: 24px;
+  }
+
+  /* Courses */
+
+  .courses-music-container {
+    padding: 48px 20px;
+  }
+
+  .courses-music-text {
+    padding-top: 80px;
+    padding-right: 100px;
+  }
+
+  .courses-music-text h2 {
+    max-width: 100%;
+    color: var(--black-fonts-headings, #2d2e2e);
+    font-family: Manuale;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .courses-music-text h2 span {
+    color: var(--Primary-primary, #cc3102);
+    font-family: Manuale;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .courses-music-container .primary-button {
+    width: 100%;
+  }
+
+  /* Blogs */
+
+  .blogs-posts {
+    padding: 48px 20px;
+    gap: 40px;
+  }
+
+  .blogs-posts-heading h2 {
+    color: var(--Font-font, #f8f8f8);
+    font-family: Manuale;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .blogs-posts-buttons {
+    display: none;
+  }
+
+  .blogs-posts-container {
+    overflow: auto;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .blogs-posts-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .blogs-posts-card {
+    width: 80%;
+    flex-shrink: 0;
+  }
+
+  .blogs-posts-card img {
+    aspect-ratio: 264/185;
+  }
+
+  .blogs-posts-card-content {
+    padding: 0;
+    gap: 0px;
+  }
+
+  .blogs-posts-card-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .blogs-posts-card-bottom a {
+    width: 100%;
+  }
+
+  .blogs-posts.testimony {
+    padding: 48px 20px;
+  }
+
+  .testimony .blogs-posts-heading {
+    padding: 0;
+  }
+
+  .testimony .blogs-posts-slider {
+    padding: 0;
+    gap: 16px;
+  }
+  .testimony-set {
+    width: 90%;
+    flex-shrink: 0;
+    padding: 20px;
+  }
+
+  .testimony-set-heading img {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1/1;
+  }
+
+  .testimony-set-heading h3 {
+    color: #fff;
+    font-family: "Space Grotesk";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .testimony-set p {
+    color: var(--Font-font, #f8f8f8);
+    font-family: "Space Grotesk";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 
   /* Application */

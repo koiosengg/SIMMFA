@@ -6,7 +6,8 @@ function Deadline() {
     <section className="home-deadline">
       <div className="home-deadline-heading">
         <h2>
-          Upcoming <span>Application</span> Deadline
+          Upcoming
+          <br /> <span>Application</span> Deadline
         </h2>
         <p>Secure your spot and begin your musical journey.</p>
       </div>

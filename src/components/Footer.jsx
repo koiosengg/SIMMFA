@@ -13,9 +13,14 @@ function Footer() {
             <Link to="about">About us</Link>
             <Link to="courses">Courses</Link>
             <Link to="blogs">Blogs</Link>
-            <Link to="contact">Contact us</Link>
+            <Link to="contact" className="desktop">
+              Contact us
+            </Link>
           </nav>
           <nav>
+            <Link to="contact" className="mobile">
+              Contact us
+            </Link>
             <a href="#" target="_blank">
               Linkedin
             </a>

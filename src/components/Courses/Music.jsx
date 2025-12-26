@@ -1,11 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DesktopBackground from "../../assets/Courses/Music/Desktop Background.png";
+import MobileBackground from "../../assets/Courses/Music/Mobile Background.png";
 
 function Music() {
   return (
     <section className="courses-music">
-      <img src={DesktopBackground} alt="Desktop Background" />
+      <img
+        src={DesktopBackground}
+        alt="Desktop Background"
+        className="desktop"
+      />
+      <img src={MobileBackground} alt="Desktop Background" className="mobile" />
       <div className="courses-music-container">
         <div className="courses-music-text">
           <h2>
