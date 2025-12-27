@@ -15,6 +15,7 @@ function Story() {
             experience.
           </p>
         </div>
+        <img src={Image} className="about-story-img mobile" />
         <div className="about-story-content-text">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,8 +58,8 @@ function Story() {
           </p>
         </div>
       </div>
-      <div className="about-story-img">
-        <img src={Image}/>
+      <div className="about-story-img desktop">
+        <img src={Image} />
       </div>
     </section>
   );

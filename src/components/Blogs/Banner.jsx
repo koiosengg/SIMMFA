@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import DesktopBackground from "../../assets/Courses/Banner/Desktop Background.png";
+import MobileBackground from "../../assets/Courses/Banner/Mobile Background.png";
 
 function Banner() {
   return (
@@ -8,7 +9,12 @@ function Banner() {
       <img
         src={DesktopBackground}
         alt="Desktop Banner Background"
-        className="home-banner-background"
+        className="home-banner-background desktop"
+      />
+      <img
+        src={MobileBackground}
+        alt="Mobile Banner Background"
+        className="home-banner-background mobile"
       />
       <div className="home-banner-container">
         <h1>
