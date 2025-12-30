@@ -1939,7 +1939,7 @@ header {
 .course-container-left-feedback {
   width: 100%;
   display: flex;
-  width: 666px;
+  max-width: 666px;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
@@ -2139,6 +2139,8 @@ header {
 }
 
 .course-container-right-details-set p {
+  flex-wrap: wrap;
+  text-align: right;
   color: var(--Font-font, #f8f8f8);
   font-family: "Space Grotesk";
   font-size: 16px;
@@ -2188,6 +2190,7 @@ header {
 }
 
 .course-container-right-share-buttons {
+  flex-wrap: wrap;
   display: flex;
   align-items: flex-start;
   gap: 8px;
@@ -4950,6 +4953,156 @@ footer .logo {
 
   .faq-set-ans p {
     font-size: 14px;
+  }
+
+  /* Courses page */
+
+  .course-container {
+    padding: 100px 20px 48px 20px;
+    flex-direction: column;
+  }
+
+  .course-container-left {
+    width: 100%;
+  }
+
+  .course-container-left-heading h1 {
+    color: var(--Font-font, #f8f8f8);
+    font-family: Manuale;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .course-container-left-info-tabs {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .course-container-left-info-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .course-container-left-info-tab {
+    width: auto;
+    min-width: 30%;
+    flex-shrink: 0;
+  }
+
+  .course-container-left-info-text h2 {
+    font-size: 20px;
+  }
+
+  .course-container-left-outcomes h2 {
+    font-size: 20px;
+  }
+
+  .course-container-left-outcomes-points {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .course-container-left-outcomes-point {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .course-container-left-outcomes-point p {
+    max-width: 100%;
+  }
+
+  .course-container-left-fees-category {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .course-container-left-fees-category::-webkit-scrollbar {
+    display: none;
+  }
+
+  .course-container-left-fees-category-sidebar {
+    width: 70%;
+    flex-shrink: 0;
+  }
+
+  .course-container-left-feedback {
+    padding-top: 28px;
+  }
+
+  .course-container-left-feedback .secondary-button {
+    width: 100%;
+  }
+
+  .course-container-right {
+    width: 100%;
+    padding: 24px 8px;
+  }
+
+  .course-container-right-price {
+    width: 100%;
+  }
+
+  .course-container-right-price p span {
+    font-size: 24px;
+  }
+
+  .course-rating {
+    padding: 48px 20px;
+    gap: 24px;
+  }
+
+  .course-rating h2 {
+    font-size: 24px;
+  }
+
+  .course-rating-container-left h3 {
+    font-size: 32px;
+  }
+
+  .course-rating-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .course-rating-container-left {
+    width: 100%;
+  }
+
+  .course-rating-container-right {
+    width: 100%;
+  }
+
+  .course-video {
+    padding: 48px 20px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .course-video-heading {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+ gap: 12px;
+  }
+
+  .course-video-heading h2{
+    font-size: 24px;
+  }
+
+  .course-video-heading p{
+    font-size: 16px;
+  }
+
+  .course-related .courses-offered-set{
+    width: 80%;
+    flex-shrink: 0;
   }
 
   /* About */
