@@ -1493,6 +1493,7 @@ header {
 }
 
 .course-container-breadcrumb {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -5089,18 +5090,18 @@ footer .logo {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
- gap: 12px;
+    gap: 12px;
   }
 
-  .course-video-heading h2{
+  .course-video-heading h2 {
     font-size: 24px;
   }
 
-  .course-video-heading p{
+  .course-video-heading p {
     font-size: 16px;
   }
 
-  .course-related .courses-offered-set{
+  .course-related .courses-offered-set {
     width: 80%;
     flex-shrink: 0;
   }
@@ -5362,6 +5363,51 @@ footer .logo {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  /* Blog page */
+
+  .blog-banner h1 {
+    color: var(--Font-font, #f8f8f8);
+    text-align: center;
+    font-family: Manuale;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .blog-container {
+    flex-direction: column-reverse;
+    padding: 48px 20px;
+  }
+
+  .blog-left {
+    width: 100%;
+    gap: 40px;
+  }
+
+  .blog-introduction {
+    padding: 48px 0px 0px 0px;
+    border: 0;
+  }
+
+  .blog-content {
+    padding: 0;
+    border: 0;
+  }
+
+  .blog-right {
+    width: 100%;
+  }
+
+  .blog-right-top {
+    padding: 40px;
+  }
+
+  .blog-right-bottom {
+    width: 100%;
+    padding: 0px 0px 48px 0px;
   }
 
   /* Contact */
